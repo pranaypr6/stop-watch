@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+#particles-js {
+    height: 100%;
+    width: 100%;
+	background: black;
+    position: fixed;
+    z-index: -1;
+}
+.watch-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #fff;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    transition: all 1s ease-in-out;
+}
+.timer-buttons button{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0,0.9);
+    color: #fff;
+    margin: 0px 10px;
+    transition: all 0.2s ease-in-out;
+}
+h1{
+    font-size: 4rem;
+}
+.timer-buttons button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+.timer-buttons button:disabled{
+    cursor:no-drop;
+}
+
+.title{
+    position: absolute;
+    top: -25px;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+}
